@@ -29,7 +29,6 @@ export class MainContentComponent implements OnInit {
         }, 500);
       });
 
-    })
+    });
   }
-
 }

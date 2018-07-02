@@ -33,6 +33,7 @@ export class UserService {
   }
 
   userById(id: number) {
+    // tslint:disable-next-line:triple-equals
     return this.dataStore.users.find(x => x.id == id);
   }
 
