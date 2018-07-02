@@ -6,10 +6,10 @@
     <mat-form-field>
       <mat-select placeholder="Avatar" [(ngModel)]="user.avatar">
         <mat-select-trigger>
-          <mat-icon svgIcon="{{user.avatar}}"></mat-icon> {{ user.avatar }}
+          <mat-icon>face</mat-icon> {{ user.avatar }}
         </mat-select-trigger>
         <mat-option *ngFor="let avatar of avatars" [value]="avatar">
-          <mat-icon svgIcon="{{avatar}}"></mat-icon> {{ avatar }}
+          <mat-icon></mat-icon> {{ avatar }}
         </mat-option>
       </mat-select>
     </mat-form-field>
