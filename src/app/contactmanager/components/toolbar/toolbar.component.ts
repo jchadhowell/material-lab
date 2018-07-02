@@ -15,7 +15,7 @@ export class ToolbarComponent implements OnInit {
   @Output() toggleDir = new EventEmitter<void>();
   
   constructor(
-    private dialog: MatDialog,
+    private dialog: MatDialog, 
     private snackBar: MatSnackBar,
     private router: Router) { }
 
@@ -39,9 +39,9 @@ export class ToolbarComponent implements OnInit {
     });
   }
 
-  // openSnackBar(message: string, action: string) : MatSnackBarRef<SimpleSnackBar> {
-  //   return this.snackBar.open(message, action, {
-  //     duration: 5000,
-  //   });
-  // }
+  openSnackBar(message: string, action: string) : MatSnackBarRef<SimpleSnackBar> {
+    return this.snackBar.open(message, action, {
+      duration: 5000,
+    });
+  }
 }
